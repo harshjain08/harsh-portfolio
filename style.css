@@ -69,12 +69,8 @@ ul {
 
 /* ======== THEME TOGGLE BUTTON ======== */
 .theme-toggle {
-    position: fixed;
-    top: 20px;
-    right: 80px;
-    z-index: 1001;
-    width: 45px;
-    height: 45px;
+    width: 40px;
+    height: 40px;
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
     border-radius: 50%;
@@ -101,7 +97,7 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 2000;
+    z-index: 1000;
     padding: 20px 0;
     background: var(--nav-bg);
     backdrop-filter: blur(10px);
@@ -121,6 +117,12 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .logo {
