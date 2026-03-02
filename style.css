@@ -473,34 +473,66 @@ ul {
 /* ======== STACK SECTION ======== */
 .stack-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px 60px;   /* row gap , column gap */
 }
 
+/* Bottom row ko center karne ke liye */
+.stack-category:nth-child(4),
+.stack-category:nth-child(5) {
+    grid-column: span 1;
+}
+
+/* Headings */
 .stack-category h3 {
     font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 20px;
-    color: var(--text-primary);
+    margin-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
+/* IMPORTANT CHANGE — grid inside each category */
 .stack-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+    display: grid;
+    gap: 25px;
 }
 
+/* Languages */
+.stack-category:nth-child(1) .stack-items {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Web Technologies */
+.stack-category:nth-child(2) .stack-items {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Database */
+.stack-category:nth-child(3) .stack-items {
+    grid-template-columns: 1fr;
+}
+
+/* Tools & Platforms (3 in one row) */
+.stack-category:nth-child(4) .stack-items {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Core Concepts */
+.stack-category:nth-child(5) .stack-items {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Card Styling */
 .stack-card {
     background: var(--bg-secondary);
     border: 1px solid var(--border-color);
-    padding: 20px 25px;
+    padding: 22px;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     transition: all 0.3s ease;
-    min-width: 120px;
 }
 
 .stack-card:hover {
@@ -510,7 +542,7 @@ ul {
 }
 
 .stack-card i {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--accent);
 }
 
