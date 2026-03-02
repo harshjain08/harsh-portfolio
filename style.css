@@ -101,7 +101,7 @@ ul {
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 2000;
     padding: 20px 0;
     background: var(--nav-bg);
     backdrop-filter: blur(10px);
