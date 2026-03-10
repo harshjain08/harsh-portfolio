@@ -634,6 +634,20 @@ ul {
     gap: 15px;
 }
 
+/* Project Card Link */
+.project-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Whole Card Clickable */
+.project-card-whole {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
 /* ======== CERTIFICATIONS SECTION ======== */
 .certifications-grid {
     display: grid;
